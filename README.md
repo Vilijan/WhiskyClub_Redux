@@ -1,8 +1,8 @@
 # WhiskyClub Redux
 
-This repository represents a simple whisky catalog application build using the Redux design pattern in SwiftUI. I created this application in order to test the Redux design pattern in a mobile application. With the release of SwiftUI, the latest framework from Apple for building iOS/mac application, I believe that this pattern will start to be used a lot in the mobile applications.
+This repository represents a simple whisky catalog application build using the Redux design pattern in SwiftUI 1.0. I created this application in order to test the Redux design pattern in a mobile application. With the release of SwiftUI, the latest framework from Apple for building iOS/mac application, I believe that this pattern will start to be used a lot in the mobile applications.
 
-In WWDC2019 Apple emphasized that the view should be a function of a state. I think that Redux perfectly matches that statement.
+In WWDC2019 Apple emphasized that the __view should be a function of a state__. I think that Redux perfectly matches that statement.
 
 What I think that are the benefits of this pattern:
 * You know every possible state of the application
