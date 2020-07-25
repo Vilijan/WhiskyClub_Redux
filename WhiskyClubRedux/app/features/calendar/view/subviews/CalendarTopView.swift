@@ -5,7 +5,7 @@ struct CalendarTopView: View {
     var body: some View {
         VStack {
             WhiskyClubImageView(imageName: "whisky_club_home",
-                                text: "Netcetera Whisky club")
+                                text: "Whisky club")
             
             Text(clubDescription)
                 .font(.system(size: 16,

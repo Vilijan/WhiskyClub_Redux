@@ -25,5 +25,5 @@ struct WhiskyCalendar: View {
 }
 
 let clubDescription = """
-The Netcetera Whisky Club is one of the first and finest whisky clubs in Macedonia. It is happening every Friday in the City Tower kitchen. We enjoy tasting different whiskies while listening to jazz music.
+The Whisky Club is one of the first and finest whisky clubs in North Macedonia. It is happening every Friday in the City Tower kitchen. We enjoy tasting different whiskies while listening to jazz music.
 """

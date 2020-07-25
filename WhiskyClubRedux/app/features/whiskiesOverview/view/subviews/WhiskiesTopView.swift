@@ -24,7 +24,7 @@ struct WhiskiesOverviewTopView: View {
         return VStack {
             
             WhiskyClubImageView(imageName: "whiskies_home",
-                                text: "Whiskies in Netcetera")
+                                text: "Whiskies")
            
             Picker(selection: selectedIndex.animation(),
                    label: Text("Whisky categorization")) {

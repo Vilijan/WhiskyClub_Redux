@@ -3,8 +3,7 @@
 //  WhiskyClubRedux
 //
 //  Created by Vilijan Monev on 11/30/19.
-//  Copyright © 2019 Netcetera. All rights reserved.
-//
+
 
 import UIKit
 import SwiftUI
