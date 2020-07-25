@@ -1,0 +1,831 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4029F00E2394E9C000E02558 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029F00D2394E9C000E02558 /* CustomTabView.swift */; };
+		4029F0112394F01800E02558 /* CalendarTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029F0102394F01800E02558 /* CalendarTopView.swift */; };
+		4029F0132394F05500E02558 /* WeeklyWhiskies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029F0122394F05500E02558 /* WeeklyWhiskies.swift */; };
+		4066E838239256EE0073C038 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4066E837239256EE0073C038 /* AppDelegate.swift */; };
+		4066E83A239256EE0073C038 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4066E839239256EE0073C038 /* SceneDelegate.swift */; };
+		4066E83C239256EE0073C038 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4066E83B239256EE0073C038 /* ContentView.swift */; };
+		4066E841239256EF0073C038 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4066E840239256EF0073C038 /* Preview Assets.xcassets */; };
+		4066E844239256EF0073C038 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4066E842239256EF0073C038 /* LaunchScreen.storyboard */; };
+		4066E862239257370073C038 /* WhiskyCategoriesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4066E84D239257370073C038 /* WhiskyCategoriesProvider.swift */; };
+		4066E863239257370073C038 /* LocalWhiskyCategoriesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4066E84F239257370073C038 /* LocalWhiskyCategoriesProvider.swift */; };
+		4066E864239257370073C038 /* WhiskiesServiceLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4066E850239257370073C038 /* WhiskiesServiceLogic.swift */; };
+		4066E865239257370073C038 /* JSONDataProviderLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4066E851239257370073C038 /* JSONDataProviderLogic.swift */; };
+		4066E866239257370073C038 /* WhiskiesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4066E852239257370073C038 /* WhiskiesService.swift */; };
+		4066E867239257370073C038 /* JSONDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4066E853239257370073C038 /* JSONDataProvider.swift */; };
+		4066E868239257370073C038 /* Distilleries.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4066E855239257370073C038 /* Distilleries.xcassets */; };
+		4066E869239257370073C038 /* distilleries.json in Resources */ = {isa = PBXBuildFile; fileRef = 4066E856239257370073C038 /* distilleries.json */; };
+		4066E86A239257370073C038 /* whiskies.json in Resources */ = {isa = PBXBuildFile; fileRef = 4066E857239257370073C038 /* whiskies.json */; };
+		4066E86B239257370073C038 /* Whiskies.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4066E858239257370073C038 /* Whiskies.xcassets */; };
+		4066E86C239257370073C038 /* Whisky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4066E85B239257370073C038 /* Whisky.swift */; };
+		4066E86F239257370073C038 /* Distillery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4066E85E239257370073C038 /* Distillery.swift */; };
+		4066E873239257520073C038 /* WeeklyWhisky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4066E872239257520073C038 /* WeeklyWhisky.swift */; };
+		4066E87D23925C220073C038 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4066E87C23925C220073C038 /* AppState.swift */; };
+		4066E87F23925C9A0073C038 /* HomeActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4066E87E23925C9A0073C038 /* HomeActions.swift */; };
+		4066E88423925CDD0073C038 /* Redux.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4066E88323925CDD0073C038 /* Redux.swift */; };
+		4066E88623925D300073C038 /* HomeReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4066E88523925D300073C038 /* HomeReducer.swift */; };
+		4066E89123925DC40073C038 /* WhiskiesOverviewViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4066E89023925DC40073C038 /* WhiskiesOverviewViewState.swift */; };
+		4066E89323925E200073C038 /* WhiskiesOverviewReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4066E89223925E200073C038 /* WhiskiesOverviewReducer.swift */; };
+		4066E89523925E290073C038 /* WhiskiesOverviewActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4066E89423925E290073C038 /* WhiskiesOverviewActions.swift */; };
+		4066E897239260570073C038 /* WhiskiesOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4066E896239260570073C038 /* WhiskiesOverviewView.swift */; };
+		4066E89A239262010073C038 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4066E899239262010073C038 /* Color.swift */; };
+		4066E89C2392623C0073C038 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4066E89B2392623C0073C038 /* Colors.xcassets */; };
+		4066E89E2392639C0073C038 /* WhiskiesOverviewInteractin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4066E89D2392639C0073C038 /* WhiskiesOverviewInteractin.swift */; };
+		4066E8A12392676B0073C038 /* AddIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4066E8A02392676B0073C038 /* AddIcon.swift */; };
+		4066E8A3239267950073C038 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4066E8A2239267950073C038 /* CalendarView.swift */; };
+		4066E8A5239268920073C038 /* CalendarViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4066E8A4239268920073C038 /* CalendarViewState.swift */; };
+		4066E8A7239269E20073C038 /* CalendarActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4066E8A6239269E20073C038 /* CalendarActions.swift */; };
+		4066E8A923926A190073C038 /* CalendarReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4066E8A823926A190073C038 /* CalendarReducer.swift */; };
+		4066E8AB23926AD40073C038 /* CalendarInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4066E8AA23926AD40073C038 /* CalendarInteraction.swift */; };
+		4066E8AE23926FE10073C038 /* HomeInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4066E8AD23926FE10073C038 /* HomeInteraction.swift */; };
+		4066E8B1239270CE0073C038 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4066E8B0239270CE0073C038 /* Home.swift */; };
+		4066E8B3239272750073C038 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4066E8B2239272750073C038 /* Assets.xcassets */; };
+		406A7AE22392B409007F5608 /* WhiskyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406A7AE12392B409007F5608 /* WhiskyState.swift */; };
+		406A7AE92392B9F6007F5608 /* WhiskyDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406A7AE82392B9F6007F5608 /* WhiskyDetailsView.swift */; };
+		406A7AEB2392BA52007F5608 /* WhiskyDetailsViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406A7AEA2392BA52007F5608 /* WhiskyDetailsViewState.swift */; };
+		406A7AED2392BC23007F5608 /* DistilleryDetailsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406A7AEC2392BC23007F5608 /* DistilleryDetailsState.swift */; };
+		406A7AEF2392BC5C007F5608 /* WhiskyDetailsActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406A7AEE2392BC5C007F5608 /* WhiskyDetailsActions.swift */; };
+		406A7AF12392BCF2007F5608 /* WhiskyDetailsReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406A7AF02392BCF2007F5608 /* WhiskyDetailsReducer.swift */; };
+		406A7AF32392BD7B007F5608 /* WhiskyDetailsInteractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406A7AF22392BD7B007F5608 /* WhiskyDetailsInteractions.swift */; };
+		408135E02399563B0073C93C /* StateRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408135DF2399563B0073C93C /* StateRepository.swift */; };
+		40B76AE52395627500870664 /* WhiskyClubTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B76AE42395627500870664 /* WhiskyClubTextField.swift */; };
+		40B76AE7239564EF00870664 /* KeyboardHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B76AE6239564EF00870664 /* KeyboardHost.swift */; };
+		40B76AE92395666900870664 /* WhiskyClubImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B76AE82395666900870664 /* WhiskyClubImageView.swift */; };
+		40B76AEC2395670700870664 /* WhiskiesTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B76AEB2395670700870664 /* WhiskiesTopView.swift */; };
+		40B76AEE2395693E00870664 /* WhiskiesSubcategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B76AED2395693E00870664 /* WhiskiesSubcategoryRow.swift */; };
+		40B76AF02395697700870664 /* WhiskyNameDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B76AEF2395697700870664 /* WhiskyNameDetails.swift */; };
+		40B76AF323956E8900870664 /* DistilleryDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B76AF223956E8900870664 /* DistilleryDetails.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4029F00D2394E9C000E02558 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
+		4029F0102394F01800E02558 /* CalendarTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTopView.swift; sourceTree = "<group>"; };
+		4029F0122394F05500E02558 /* WeeklyWhiskies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyWhiskies.swift; sourceTree = "<group>"; };
+		4066E834239256EE0073C038 /* WhiskyClubRedux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhiskyClubRedux.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4066E837239256EE0073C038 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4066E839239256EE0073C038 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4066E83B239256EE0073C038 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4066E840239256EF0073C038 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4066E843239256EF0073C038 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4066E845239256EF0073C038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4066E84D239257370073C038 /* WhiskyCategoriesProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhiskyCategoriesProvider.swift; sourceTree = "<group>"; };
+		4066E84F239257370073C038 /* LocalWhiskyCategoriesProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalWhiskyCategoriesProvider.swift; sourceTree = "<group>"; };
+		4066E850239257370073C038 /* WhiskiesServiceLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhiskiesServiceLogic.swift; sourceTree = "<group>"; };
+		4066E851239257370073C038 /* JSONDataProviderLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDataProviderLogic.swift; sourceTree = "<group>"; };
+		4066E852239257370073C038 /* WhiskiesService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhiskiesService.swift; sourceTree = "<group>"; };
+		4066E853239257370073C038 /* JSONDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDataProvider.swift; sourceTree = "<group>"; };
+		4066E855239257370073C038 /* Distilleries.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Distilleries.xcassets; sourceTree = "<group>"; };
+		4066E856239257370073C038 /* distilleries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = distilleries.json; sourceTree = "<group>"; };
+		4066E857239257370073C038 /* whiskies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = whiskies.json; sourceTree = "<group>"; };
+		4066E858239257370073C038 /* Whiskies.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Whiskies.xcassets; sourceTree = "<group>"; };
+		4066E85B239257370073C038 /* Whisky.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Whisky.swift; sourceTree = "<group>"; };
+		4066E85E239257370073C038 /* Distillery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Distillery.swift; sourceTree = "<group>"; };
+		4066E872239257520073C038 /* WeeklyWhisky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyWhisky.swift; sourceTree = "<group>"; };
+		4066E87C23925C220073C038 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		4066E87E23925C9A0073C038 /* HomeActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeActions.swift; sourceTree = "<group>"; };
+		4066E88323925CDD0073C038 /* Redux.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Redux.swift; sourceTree = "<group>"; };
+		4066E88523925D300073C038 /* HomeReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeReducer.swift; sourceTree = "<group>"; };
+		4066E89023925DC40073C038 /* WhiskiesOverviewViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiskiesOverviewViewState.swift; sourceTree = "<group>"; };
+		4066E89223925E200073C038 /* WhiskiesOverviewReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiskiesOverviewReducer.swift; sourceTree = "<group>"; };
+		4066E89423925E290073C038 /* WhiskiesOverviewActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiskiesOverviewActions.swift; sourceTree = "<group>"; };
+		4066E896239260570073C038 /* WhiskiesOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiskiesOverviewView.swift; sourceTree = "<group>"; };
+		4066E899239262010073C038 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		4066E89B2392623C0073C038 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		4066E89D2392639C0073C038 /* WhiskiesOverviewInteractin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiskiesOverviewInteractin.swift; sourceTree = "<group>"; };
+		4066E8A02392676B0073C038 /* AddIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIcon.swift; sourceTree = "<group>"; };
+		4066E8A2239267950073C038 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		4066E8A4239268920073C038 /* CalendarViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewState.swift; sourceTree = "<group>"; };
+		4066E8A6239269E20073C038 /* CalendarActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarActions.swift; sourceTree = "<group>"; };
+		4066E8A823926A190073C038 /* CalendarReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarReducer.swift; sourceTree = "<group>"; };
+		4066E8AA23926AD40073C038 /* CalendarInteraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarInteraction.swift; sourceTree = "<group>"; };
+		4066E8AD23926FE10073C038 /* HomeInteraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteraction.swift; sourceTree = "<group>"; };
+		4066E8B0239270CE0073C038 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		4066E8B2239272750073C038 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		406A7AE12392B409007F5608 /* WhiskyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiskyState.swift; sourceTree = "<group>"; };
+		406A7AE82392B9F6007F5608 /* WhiskyDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiskyDetailsView.swift; sourceTree = "<group>"; };
+		406A7AEA2392BA52007F5608 /* WhiskyDetailsViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiskyDetailsViewState.swift; sourceTree = "<group>"; };
+		406A7AEC2392BC23007F5608 /* DistilleryDetailsState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistilleryDetailsState.swift; sourceTree = "<group>"; };
+		406A7AEE2392BC5C007F5608 /* WhiskyDetailsActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiskyDetailsActions.swift; sourceTree = "<group>"; };
+		406A7AF02392BCF2007F5608 /* WhiskyDetailsReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiskyDetailsReducer.swift; sourceTree = "<group>"; };
+		406A7AF22392BD7B007F5608 /* WhiskyDetailsInteractions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiskyDetailsInteractions.swift; sourceTree = "<group>"; };
+		408135DF2399563B0073C93C /* StateRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateRepository.swift; sourceTree = "<group>"; };
+		40B76AE42395627500870664 /* WhiskyClubTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiskyClubTextField.swift; sourceTree = "<group>"; };
+		40B76AE6239564EF00870664 /* KeyboardHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHost.swift; sourceTree = "<group>"; };
+		40B76AE82395666900870664 /* WhiskyClubImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiskyClubImageView.swift; sourceTree = "<group>"; };
+		40B76AEB2395670700870664 /* WhiskiesTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiskiesTopView.swift; sourceTree = "<group>"; };
+		40B76AED2395693E00870664 /* WhiskiesSubcategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiskiesSubcategoryRow.swift; sourceTree = "<group>"; };
+		40B76AEF2395697700870664 /* WhiskyNameDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiskyNameDetails.swift; sourceTree = "<group>"; };
+		40B76AF223956E8900870664 /* DistilleryDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistilleryDetails.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4066E831239256EE0073C038 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4029F00C2394E95700E02558 /* subviews */ = {
+			isa = PBXGroup;
+			children = (
+				4029F00D2394E9C000E02558 /* CustomTabView.swift */,
+			);
+			path = subviews;
+			sourceTree = "<group>";
+		};
+		4029F00F2394F00B00E02558 /* subviews */ = {
+			isa = PBXGroup;
+			children = (
+				4029F0102394F01800E02558 /* CalendarTopView.swift */,
+				4029F0122394F05500E02558 /* WeeklyWhiskies.swift */,
+			);
+			path = subviews;
+			sourceTree = "<group>";
+		};
+		4066E82B239256EE0073C038 = {
+			isa = PBXGroup;
+			children = (
+				4066E836239256EE0073C038 /* WhiskyClubRedux */,
+				4066E835239256EE0073C038 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4066E835239256EE0073C038 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4066E834239256EE0073C038 /* WhiskyClubRedux.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4066E836239256EE0073C038 /* WhiskyClubRedux */ = {
+			isa = PBXGroup;
+			children = (
+				40B76AF5239572E700870664 /* other */,
+				4066E87623925A400073C038 /* app */,
+			);
+			path = WhiskyClubRedux;
+			sourceTree = "<group>";
+		};
+		4066E83F239256EF0073C038 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4066E840239256EF0073C038 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4066E84B239257370073C038 /* useCase */ = {
+			isa = PBXGroup;
+			children = (
+				4066E84C239257370073C038 /* dataProvider */,
+			);
+			path = useCase;
+			sourceTree = "<group>";
+		};
+		4066E84C239257370073C038 /* dataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				4066E84D239257370073C038 /* WhiskyCategoriesProvider.swift */,
+				4066E852239257370073C038 /* WhiskiesService.swift */,
+				4066E853239257370073C038 /* JSONDataProvider.swift */,
+				4066E84E239257370073C038 /* logic */,
+			);
+			path = dataProvider;
+			sourceTree = "<group>";
+		};
+		4066E84E239257370073C038 /* logic */ = {
+			isa = PBXGroup;
+			children = (
+				4066E84F239257370073C038 /* LocalWhiskyCategoriesProvider.swift */,
+				4066E850239257370073C038 /* WhiskiesServiceLogic.swift */,
+				4066E851239257370073C038 /* JSONDataProviderLogic.swift */,
+			);
+			path = logic;
+			sourceTree = "<group>";
+		};
+		4066E854239257370073C038 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				4066E89B2392623C0073C038 /* Colors.xcassets */,
+				4066E8B2239272750073C038 /* Assets.xcassets */,
+				4066E855239257370073C038 /* Distilleries.xcassets */,
+				4066E856239257370073C038 /* distilleries.json */,
+				4066E857239257370073C038 /* whiskies.json */,
+				4066E858239257370073C038 /* Whiskies.xcassets */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		4066E859239257370073C038 /* infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				4066E85A239257370073C038 /* models */,
+			);
+			path = infrastructure;
+			sourceTree = "<group>";
+		};
+		4066E85A239257370073C038 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				4066E85B239257370073C038 /* Whisky.swift */,
+				4066E85E239257370073C038 /* Distillery.swift */,
+				4066E872239257520073C038 /* WeeklyWhisky.swift */,
+				4066E88323925CDD0073C038 /* Redux.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		4066E87623925A400073C038 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				4066E8AF239270BA0073C038 /* view */,
+				4066E87923925A9B0073C038 /* features */,
+				4066E87A23925AA50073C038 /* redux */,
+				4066E87B23925AD50073C038 /* state */,
+				4066E8AC23926FD10073C038 /* interaction */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		4066E87723925A500073C038 /* calendar */ = {
+			isa = PBXGroup;
+			children = (
+				4066E88F23925DAE0073C038 /* view */,
+				4066E88B23925D6B0073C038 /* redux */,
+				4066E88A23925D5F0073C038 /* state */,
+				4066E88D23925D940073C038 /* interaction */,
+			);
+			path = calendar;
+			sourceTree = "<group>";
+		};
+		4066E87823925A630073C038 /* whiskiesOverview */ = {
+			isa = PBXGroup;
+			children = (
+				4066E88E23925DAA0073C038 /* view */,
+				406A7ADC2392B169007F5608 /* features */,
+				4066E88923925D420073C038 /* redux */,
+				4066E88823925D3F0073C038 /* state */,
+				4066E88723925D3D0073C038 /* interaction */,
+			);
+			path = whiskiesOverview;
+			sourceTree = "<group>";
+		};
+		4066E87923925A9B0073C038 /* features */ = {
+			isa = PBXGroup;
+			children = (
+				4066E87823925A630073C038 /* whiskiesOverview */,
+				4066E87723925A500073C038 /* calendar */,
+			);
+			path = features;
+			sourceTree = "<group>";
+		};
+		4066E87A23925AA50073C038 /* redux */ = {
+			isa = PBXGroup;
+			children = (
+				4066E87E23925C9A0073C038 /* HomeActions.swift */,
+				4066E88523925D300073C038 /* HomeReducer.swift */,
+			);
+			path = redux;
+			sourceTree = "<group>";
+		};
+		4066E87B23925AD50073C038 /* state */ = {
+			isa = PBXGroup;
+			children = (
+				4066E87C23925C220073C038 /* AppState.swift */,
+			);
+			path = state;
+			sourceTree = "<group>";
+		};
+		4066E88723925D3D0073C038 /* interaction */ = {
+			isa = PBXGroup;
+			children = (
+				4066E89D2392639C0073C038 /* WhiskiesOverviewInteractin.swift */,
+			);
+			path = interaction;
+			sourceTree = "<group>";
+		};
+		4066E88823925D3F0073C038 /* state */ = {
+			isa = PBXGroup;
+			children = (
+				4066E89023925DC40073C038 /* WhiskiesOverviewViewState.swift */,
+				406A7AE12392B409007F5608 /* WhiskyState.swift */,
+			);
+			path = state;
+			sourceTree = "<group>";
+		};
+		4066E88923925D420073C038 /* redux */ = {
+			isa = PBXGroup;
+			children = (
+				4066E89423925E290073C038 /* WhiskiesOverviewActions.swift */,
+				4066E89223925E200073C038 /* WhiskiesOverviewReducer.swift */,
+			);
+			path = redux;
+			sourceTree = "<group>";
+		};
+		4066E88A23925D5F0073C038 /* state */ = {
+			isa = PBXGroup;
+			children = (
+				4066E8A4239268920073C038 /* CalendarViewState.swift */,
+			);
+			path = state;
+			sourceTree = "<group>";
+		};
+		4066E88B23925D6B0073C038 /* redux */ = {
+			isa = PBXGroup;
+			children = (
+				4066E8A6239269E20073C038 /* CalendarActions.swift */,
+				4066E8A823926A190073C038 /* CalendarReducer.swift */,
+			);
+			path = redux;
+			sourceTree = "<group>";
+		};
+		4066E88D23925D940073C038 /* interaction */ = {
+			isa = PBXGroup;
+			children = (
+				4066E8AA23926AD40073C038 /* CalendarInteraction.swift */,
+			);
+			path = interaction;
+			sourceTree = "<group>";
+		};
+		4066E88E23925DAA0073C038 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				4066E896239260570073C038 /* WhiskiesOverviewView.swift */,
+				40B76AEA239566F000870664 /* subviews */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		4066E88F23925DAE0073C038 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				4066E8A2239267950073C038 /* CalendarView.swift */,
+				4029F00F2394F00B00E02558 /* subviews */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		4066E898239261F20073C038 /* branding */ = {
+			isa = PBXGroup;
+			children = (
+				4066E899239262010073C038 /* Color.swift */,
+			);
+			path = branding;
+			sourceTree = "<group>";
+		};
+		4066E89F239267600073C038 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4066E8A02392676B0073C038 /* AddIcon.swift */,
+				40B76AE42395627500870664 /* WhiskyClubTextField.swift */,
+				40B76AE6239564EF00870664 /* KeyboardHost.swift */,
+				40B76AE82395666900870664 /* WhiskyClubImageView.swift */,
+				40B76AEF2395697700870664 /* WhiskyNameDetails.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		4066E8AC23926FD10073C038 /* interaction */ = {
+			isa = PBXGroup;
+			children = (
+				4066E8AD23926FE10073C038 /* HomeInteraction.swift */,
+			);
+			path = interaction;
+			sourceTree = "<group>";
+		};
+		4066E8AF239270BA0073C038 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				4066E8B0239270CE0073C038 /* Home.swift */,
+				4029F00C2394E95700E02558 /* subviews */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		406A7ADC2392B169007F5608 /* features */ = {
+			isa = PBXGroup;
+			children = (
+				406A7AE32392B9A6007F5608 /* whiskyDetails */,
+			);
+			path = features;
+			sourceTree = "<group>";
+		};
+		406A7AE32392B9A6007F5608 /* whiskyDetails */ = {
+			isa = PBXGroup;
+			children = (
+				406A7AE42392B9B5007F5608 /* view */,
+				406A7AE52392B9C0007F5608 /* redux */,
+				406A7AE62392B9CB007F5608 /* state */,
+				406A7AE72392B9CE007F5608 /* interaction */,
+			);
+			path = whiskyDetails;
+			sourceTree = "<group>";
+		};
+		406A7AE42392B9B5007F5608 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				406A7AE82392B9F6007F5608 /* WhiskyDetailsView.swift */,
+				40B76AF123956E7B00870664 /* subviews */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		406A7AE52392B9C0007F5608 /* redux */ = {
+			isa = PBXGroup;
+			children = (
+				406A7AEE2392BC5C007F5608 /* WhiskyDetailsActions.swift */,
+				406A7AF02392BCF2007F5608 /* WhiskyDetailsReducer.swift */,
+			);
+			path = redux;
+			sourceTree = "<group>";
+		};
+		406A7AE62392B9CB007F5608 /* state */ = {
+			isa = PBXGroup;
+			children = (
+				406A7AEA2392BA52007F5608 /* WhiskyDetailsViewState.swift */,
+				406A7AEC2392BC23007F5608 /* DistilleryDetailsState.swift */,
+			);
+			path = state;
+			sourceTree = "<group>";
+		};
+		406A7AE72392B9CE007F5608 /* interaction */ = {
+			isa = PBXGroup;
+			children = (
+				406A7AF22392BD7B007F5608 /* WhiskyDetailsInteractions.swift */,
+			);
+			path = interaction;
+			sourceTree = "<group>";
+		};
+		40B76AEA239566F000870664 /* subviews */ = {
+			isa = PBXGroup;
+			children = (
+				40B76AEB2395670700870664 /* WhiskiesTopView.swift */,
+				40B76AED2395693E00870664 /* WhiskiesSubcategoryRow.swift */,
+			);
+			path = subviews;
+			sourceTree = "<group>";
+		};
+		40B76AF123956E7B00870664 /* subviews */ = {
+			isa = PBXGroup;
+			children = (
+				40B76AF223956E8900870664 /* DistilleryDetails.swift */,
+			);
+			path = subviews;
+			sourceTree = "<group>";
+		};
+		40B76AF5239572E700870664 /* other */ = {
+			isa = PBXGroup;
+			children = (
+				4066E89F239267600073C038 /* UI */,
+				4066E898239261F20073C038 /* branding */,
+				4066E859239257370073C038 /* infrastructure */,
+				4066E854239257370073C038 /* resources */,
+				4066E84B239257370073C038 /* useCase */,
+				4066E837239256EE0073C038 /* AppDelegate.swift */,
+				4066E839239256EE0073C038 /* SceneDelegate.swift */,
+				4066E83B239256EE0073C038 /* ContentView.swift */,
+				408135DF2399563B0073C93C /* StateRepository.swift */,
+				4066E842239256EF0073C038 /* LaunchScreen.storyboard */,
+				4066E845239256EF0073C038 /* Info.plist */,
+				4066E83F239256EF0073C038 /* Preview Content */,
+			);
+			name = other;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4066E833239256EE0073C038 /* WhiskyClubRedux */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4066E848239256EF0073C038 /* Build configuration list for PBXNativeTarget "WhiskyClubRedux" */;
+			buildPhases = (
+				4066E830239256EE0073C038 /* Sources */,
+				4066E831239256EE0073C038 /* Frameworks */,
+				4066E832239256EE0073C038 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WhiskyClubRedux;
+			productName = WhiskyClubRedux;
+			productReference = 4066E834239256EE0073C038 /* WhiskyClubRedux.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4066E82C239256EE0073C038 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = Netcetera;
+				TargetAttributes = {
+					4066E833239256EE0073C038 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 4066E82F239256EE0073C038 /* Build configuration list for PBXProject "WhiskyClubRedux" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4066E82B239256EE0073C038;
+			productRefGroup = 4066E835239256EE0073C038 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4066E833239256EE0073C038 /* WhiskyClubRedux */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4066E832239256EE0073C038 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4066E86A239257370073C038 /* whiskies.json in Resources */,
+				4066E86B239257370073C038 /* Whiskies.xcassets in Resources */,
+				4066E844239256EF0073C038 /* LaunchScreen.storyboard in Resources */,
+				4066E841239256EF0073C038 /* Preview Assets.xcassets in Resources */,
+				4066E868239257370073C038 /* Distilleries.xcassets in Resources */,
+				4066E89C2392623C0073C038 /* Colors.xcassets in Resources */,
+				4066E8B3239272750073C038 /* Assets.xcassets in Resources */,
+				4066E869239257370073C038 /* distilleries.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4066E830239256EE0073C038 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4066E89E2392639C0073C038 /* WhiskiesOverviewInteractin.swift in Sources */,
+				4066E8A923926A190073C038 /* CalendarReducer.swift in Sources */,
+				4029F0112394F01800E02558 /* CalendarTopView.swift in Sources */,
+				4066E8AB23926AD40073C038 /* CalendarInteraction.swift in Sources */,
+				4066E866239257370073C038 /* WhiskiesService.swift in Sources */,
+				40B76AEC2395670700870664 /* WhiskiesTopView.swift in Sources */,
+				4066E8A3239267950073C038 /* CalendarView.swift in Sources */,
+				4066E863239257370073C038 /* LocalWhiskyCategoriesProvider.swift in Sources */,
+				40B76AF02395697700870664 /* WhiskyNameDetails.swift in Sources */,
+				4066E89A239262010073C038 /* Color.swift in Sources */,
+				40B76AE7239564EF00870664 /* KeyboardHost.swift in Sources */,
+				406A7AEB2392BA52007F5608 /* WhiskyDetailsViewState.swift in Sources */,
+				40B76AEE2395693E00870664 /* WhiskiesSubcategoryRow.swift in Sources */,
+				40B76AE52395627500870664 /* WhiskyClubTextField.swift in Sources */,
+				4066E89323925E200073C038 /* WhiskiesOverviewReducer.swift in Sources */,
+				40B76AE92395666900870664 /* WhiskyClubImageView.swift in Sources */,
+				4066E87D23925C220073C038 /* AppState.swift in Sources */,
+				408135E02399563B0073C93C /* StateRepository.swift in Sources */,
+				4066E8AE23926FE10073C038 /* HomeInteraction.swift in Sources */,
+				4066E89523925E290073C038 /* WhiskiesOverviewActions.swift in Sources */,
+				406A7AEF2392BC5C007F5608 /* WhiskyDetailsActions.swift in Sources */,
+				4066E865239257370073C038 /* JSONDataProviderLogic.swift in Sources */,
+				4066E864239257370073C038 /* WhiskiesServiceLogic.swift in Sources */,
+				4066E838239256EE0073C038 /* AppDelegate.swift in Sources */,
+				4066E862239257370073C038 /* WhiskyCategoriesProvider.swift in Sources */,
+				406A7AE22392B409007F5608 /* WhiskyState.swift in Sources */,
+				4066E87F23925C9A0073C038 /* HomeActions.swift in Sources */,
+				4066E86C239257370073C038 /* Whisky.swift in Sources */,
+				406A7AE92392B9F6007F5608 /* WhiskyDetailsView.swift in Sources */,
+				406A7AED2392BC23007F5608 /* DistilleryDetailsState.swift in Sources */,
+				4029F0132394F05500E02558 /* WeeklyWhiskies.swift in Sources */,
+				40B76AF323956E8900870664 /* DistilleryDetails.swift in Sources */,
+				406A7AF32392BD7B007F5608 /* WhiskyDetailsInteractions.swift in Sources */,
+				4029F00E2394E9C000E02558 /* CustomTabView.swift in Sources */,
+				4066E83A239256EE0073C038 /* SceneDelegate.swift in Sources */,
+				4066E83C239256EE0073C038 /* ContentView.swift in Sources */,
+				406A7AF12392BCF2007F5608 /* WhiskyDetailsReducer.swift in Sources */,
+				4066E89123925DC40073C038 /* WhiskiesOverviewViewState.swift in Sources */,
+				4066E897239260570073C038 /* WhiskiesOverviewView.swift in Sources */,
+				4066E8A7239269E20073C038 /* CalendarActions.swift in Sources */,
+				4066E8B1239270CE0073C038 /* Home.swift in Sources */,
+				4066E8A5239268920073C038 /* CalendarViewState.swift in Sources */,
+				4066E867239257370073C038 /* JSONDataProvider.swift in Sources */,
+				4066E873239257520073C038 /* WeeklyWhisky.swift in Sources */,
+				4066E88423925CDD0073C038 /* Redux.swift in Sources */,
+				4066E88623925D300073C038 /* HomeReducer.swift in Sources */,
+				4066E8A12392676B0073C038 /* AddIcon.swift in Sources */,
+				4066E86F239257370073C038 /* Distillery.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4066E842239256EF0073C038 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4066E843239256EF0073C038 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4066E846239256EF0073C038 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4066E847239256EF0073C038 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4066E849239256EF0073C038 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_ASSET_PATHS = "\"WhiskyClubRedux/Preview Content\"";
+				DEVELOPMENT_TEAM = LAA69LK8PF;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = WhiskyClubRedux/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.netcetera.WhiskyClubRedux;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = GenericDevelopmentNew;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4066E84A239256EF0073C038 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_ASSET_PATHS = "\"WhiskyClubRedux/Preview Content\"";
+				DEVELOPMENT_TEAM = LAA69LK8PF;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = WhiskyClubRedux/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.netcetera.WhiskyClubRedux;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = GenericDevelopmentNew;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4066E82F239256EE0073C038 /* Build configuration list for PBXProject "WhiskyClubRedux" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4066E846239256EF0073C038 /* Debug */,
+				4066E847239256EF0073C038 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4066E848239256EF0073C038 /* Build configuration list for PBXNativeTarget "WhiskyClubRedux" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4066E849239256EF0073C038 /* Debug */,
+				4066E84A239256EF0073C038 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4066E82C239256EE0073C038 /* Project object */;
+}
